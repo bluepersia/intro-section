@@ -3,7 +3,9 @@
   --MediumGray: hsl(0, 0%, 41%);
   --AlmostBlack: hsl(0, 0%, 8%);
 }
-
+html {
+  font-size: 18px;
+}
 body {
   margin: 0;
   font-family: "Epilogue", sans-serif;;
@@ -23,4 +25,55 @@ p {
 
 * :last-child {
   margin-bottom: 0;
+}
+
+
+.container {
+  padding: 1.27em 5%;
+}
+
+.tablet {
+  display: none;
+}
+
+.desktop
+ {
+  display: none;
+ }
+
+.mobile {
+  display: inherit;
+}
+
+
+@media (min-width: 786px)
+{
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: inherit;
+  }
+}
+
+
+@media (min-width: 1200px)
+{
+  .mobile {
+    display: none;
+  }
+
+  .tablet
+  {
+    display: none;
+  }
+
+  .desktop {
+    display: inherit;
+  }
 }
