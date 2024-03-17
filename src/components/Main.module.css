@@ -44,6 +44,7 @@
     .main {
         display: flex;
         align-items: stretch;
+        justify-content: space-between;
         gap: 1em;
         padding: 0 9% 0 11%;
     }
@@ -61,10 +62,6 @@
         font-size: 4rem;
     }
 
-    .imgDesktop {
-        justify-self: end;
-        margin-left: auto;
-    }
     
     .btn {
         margin-top: 9%;
