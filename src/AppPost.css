@@ -1,0 +1,45 @@
+.tablet {
+    display: none;
+  }
+  
+  .desktop
+   {
+    display: none;
+   }
+  
+  .mobile {
+    display: inherit;
+  }
+  
+  
+  @media (min-width: 912px)
+  {
+    .mobile {
+      display: none;
+    }
+  
+    .desktop {
+      display: none;
+    }
+  
+    .tablet {
+      display: inherit;
+    }
+  }
+  
+  
+  @media (min-width: 1200px)
+  {
+    .mobile {
+      display: none;
+    }
+  
+    .tablet
+    {
+      display: none;
+    }
+  
+    .desktop {
+      display: inherit;
+    }
+  }
