@@ -9,6 +9,8 @@ html {
 body {
   margin: 0;
   font-family: "Epilogue", sans-serif;;
+  background-color: var(--AlmostWhite);
+  color: var(--MediumGray);
 }
 
 p {
@@ -32,48 +34,15 @@ p {
   padding: 1.27em 5%;
 }
 
-.tablet {
-  display: none;
+
+.btn {
+  padding: .77em 1.27em;
+  border:none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 16px;
+  transition: color 300ms;
 }
 
-.desktop
- {
-  display: none;
- }
-
-.mobile {
-  display: inherit;
-}
-
-
-@media (min-width: 786px)
-{
-  .mobile {
-    display: none;
-  }
-
-  .desktop {
-    display: none;
-  }
-
-  .tablet {
-    display: inherit;
-  }
-}
-
-
-@media (min-width: 1200px)
-{
-  .mobile {
-    display: none;
-  }
-
-  .tablet
-  {
-    display: none;
-  }
-
-  .desktop {
-    display: inherit;
-  }
-}
