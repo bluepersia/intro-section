@@ -10,19 +10,20 @@ export default function Main(): JSX.Element {
   return (
     <main className={styles.main}>
       <img src={imgHeroMobile} className={styles.imgMobile + ' mobile'} />
-      <div className={styles.content}></div>
-      <h1 className={styles.title}>Make remote work</h1>
-      <p className={styles.body}>
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
-      </p>
-      <button className={styles.btn}>Learn more</button>
+      <div className={styles.content}>
+        <h1 className={styles.title}>Make remote work</h1>
+        <p className={styles.body}>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button className={styles.btn}>Learn more</button>
 
-      <div className={styles.clients}>
-        <img src={imgDatabiz} className={styles.client} />
-        <img src={imgAudophile} className={styles.client} />
-        <img src={imgMeet} className={styles.client} />
-        <img src={imgMaker} className={styles.client} />
+        <div className={styles.clients}>
+          <img src={imgDatabiz} className={styles.client} />
+          <img src={imgAudophile} className={styles.client} />
+          <img src={imgMeet} className={styles.client} />
+          <img src={imgMaker} className={styles.client} />
+        </div>
       </div>
       <img
         src={imgHeroDesktop}

@@ -1,0 +1,71 @@
+@import '../App.css';
+.main {
+    text-align: center;
+}
+
+.imgMobile {
+    width: 100%;
+}
+
+.title {
+    color: var(--AlmostBlack);
+}
+
+.content {
+    padding: 3em 5% 5.38em;
+}
+
+
+.btn {
+    composes: btn from '../App.css';
+    background-color: var(--AlmostBlack);
+    color: white;
+}
+
+
+.clients {
+    margin-top: 2.66em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client {
+    width: 18%;
+}
+
+.imgDesktop {
+    width: 42%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px)
+{
+    .main {
+        display: flex;
+        align-items: stretch;
+        gap: 1em;
+    }
+
+    .content {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-bottom: 0;
+        padding-top:12%;
+    }
+
+    .title{
+        font-size: 4rem;
+    }
+    
+    .btn {
+        margin-top: 9%;
+        margin-bottom: 16%;
+    }
+
+    .clients {
+        margin-top: auto;
+    }
+}
