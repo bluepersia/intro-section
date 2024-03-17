@@ -17,13 +17,20 @@ export default function Header(): JSX.Element {
 
   useEffect(() => {
     document.addEventListener('click', handleGlobalClick);
+    window.addEventListener('resize', handleResize);
 
     return () => {
       document.removeEventListener('click', handleGlobalClick);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   function handleGlobalClick(): void {
+    setFeaturesOpen(false);
+    setCompanyOpen(false);
+  }
+
+  function handleResize(): void {
     setFeaturesOpen(false);
     setCompanyOpen(false);
   }
