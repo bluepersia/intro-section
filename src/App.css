@@ -37,12 +37,12 @@ p {
 
 .btn {
   padding: .77em 1.27em;
-  border:none;
   font-size: inherit;
   font-family: inherit;
   color: inherit;
   text-decoration: none;
   border-radius: 16px;
   transition: color 300ms;
+  cursor: pointer;
 }
 
